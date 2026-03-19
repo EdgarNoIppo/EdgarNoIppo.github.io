@@ -1,0 +1,19 @@
+.contact {
+    text-align: center;
+    .contact-card {
+        color: var(--background);
+        background: var(--accent);
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-family: "Press Start 2P", monospace;
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: "VT323";
+        margin-bottom: 30px;
+        font-size: 2rem;
+        color: black;
+        background: var(--accent)
+    }  
+}

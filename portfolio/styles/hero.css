@@ -1,0 +1,55 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/art/background/background.png) center/cover no-repeat;
+    image-rendering: pixelated;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 10;
+    padding: 40px;
+    border: 4px solid var(--accent);
+}
+.primary-text {
+    color: var(--primary);
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.pixel-button {
+    display: inline-block;
+    font-family: "Press Start 2P", cursive;
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: var(--foreground);
+    text-decoration: none;
+    border: none;
+    padding: 20px 40px;
+    margin: 10px;
+    box-shadow: 
+        4px 0 0 var(--border),
+        0 4px 0 var(--border),
+        -4px 0 0 var(--border),
+        0 -4px 0 var(--border);
+    transition: transform 0.1s;
+}
+.start-button:hover {
+    transform: translateY(6px);
+    background-color: #d43f3f;
+}
+h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+}
