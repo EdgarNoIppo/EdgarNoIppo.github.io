@@ -11,6 +11,9 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    border: 1px solid red !important;
+}
 
 body {
     background-color: var(--background);
@@ -73,7 +76,7 @@ footer {
 .animation-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
+/*Mobile Compatability*/
 @media (max-width: 780px) {
     h1 {font-size: 1.5rem;}
     .primary-text {font-size: 2.5rem;}
@@ -82,7 +85,55 @@ footer {
     }
     .avatar-container {
         margin: auto;
-        max-width: 100vh;
+        max-width: 100%
+    }
+    h1 {font-size: 1.5rem;}
+    .primary-text {font-size: 2.5rem;}
+    .stats-grid {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+        gap: 20px;
+    }
+    .avatar-container {
+        margin: auto;
+        max-width: 100%;
+    }
+    .stat-row {
+        gap: 10px;
+    }
+    .stat-row .stat-label {
+        width: 90px;
+        font-size: 1.5rem;
+    }
+    .projects {
+        padding: 80px 10px 60px;
+    }
+    .projects .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    .pixel-card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .pixel-card .card-header {
+        font-size: 0.9rem;
+    }
+    .contact .contact-card {
+        margin-bottom: 50px;
+    }
+    .contact p {
+        font-size: 1.5rem;
+    }
+    footer {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+    .container {
+        padding: 0 15px;
     }
 }
 

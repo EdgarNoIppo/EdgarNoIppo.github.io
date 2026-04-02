@@ -53,3 +53,50 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.8);
 }
+
+/*Mobile UI*/
+/* Add this to your existing CSS */
+@media (max-width: 768px) {
+    .primary-text {
+        font-size: 2rem !important; /* Much smaller than 5rem */
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem !important; /* Down from 3rem */
+        margin-bottom: 15px;
+    }
+    
+    .hero-content {
+        padding: 20px; /* Less padding */
+        margin: 10px; /* Add margin so it doesn't touch edges */
+    }
+    
+    .pixel-button {
+        font-size: 0.8rem; /* Smaller button text */
+        padding: 15px 25px; /* Smaller button */
+    }
+}
+
+/* For really small phones */
+@media (max-width: 480px) {
+    .primary-text {
+        font-size: 1.5rem !important;
+    }
+    
+    h1 {
+        font-size: 1.2rem !important;
+    }
+    
+    .hero-content {
+        padding: 15px;
+        margin: 5px;
+    }
+    
+    .pixel-button {
+        font-size: 0.7rem;
+        padding: 12px 20px;
+        margin: 5px;
+    }
+}

@@ -56,3 +56,13 @@
         transition: width 1s ease-out;
     }
 }
+
+@media (max-width: 768px) {
+    .stat-label {
+        width: 80px;
+        font-size: 1.5rem;
+    }
+    .stats-grid {
+        grid-template-columns: 1frx;
+    }
+}

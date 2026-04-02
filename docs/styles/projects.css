@@ -11,7 +11,7 @@
     }
     .project-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
         gap: 30px;
     }
     .project-card {
@@ -56,5 +56,13 @@
         font-size: 0.8rem;
         margin-bottom: 15px;
         text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {
+     .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2px;
     }
 }
