@@ -63,6 +63,6 @@
         font-size: 1.5rem;
     }
     .stats-grid {
-        grid-template-columns: 1frx;
+        grid-template-columns: 1fr;
     }
 }
